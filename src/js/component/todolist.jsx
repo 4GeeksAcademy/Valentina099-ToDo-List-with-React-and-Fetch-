@@ -98,7 +98,7 @@ const Todolist = () => {
 			<div>
 				<input type="text" value={newTodo} onChange={handleChange} />
 				<button type="button" class="btn btn-success" onClick={addNewTask}  >
-					Add task
+					Add a new task
 				</button>
 			</div>
 			<p>New Task:{newTodo} </p>
@@ -106,7 +106,7 @@ const Todolist = () => {
 				{list.map((item, index) => {
 					return (
 						<li key={index}>
-							{item.label}<button type="button" class="btn btn-danger" onClick={() => deleteUser(item.id)}>Erase</button>
+							{item.label}<button type="button" class="btn btn-danger" onClick={() => deleteUser(item.id)}> Delete </button>
 
 						</li>
 					)
